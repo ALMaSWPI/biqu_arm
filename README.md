@@ -8,7 +8,7 @@ Git repository for the BiQu MQP 23-24, containing documentation for the Arduino,
 - [SolidWorks CAD](#solidworks-cad)
 - [BiQu Go1 URDF](#biqu-go1-urdf)
 
-## 1. Arduino Library
+## <a names="arduino-library"></a>1. Arduino Library
 This folder contains Arduino libraries for controlling a robotic arm via different communication interfaces. Currently, two communication methods are supported: serial USB connection and ROS (Robot Operating System) messages.
 
 ### Robot_Arm_Serial

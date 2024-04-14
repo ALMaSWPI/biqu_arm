@@ -60,4 +60,19 @@ This directory contains the SolidWorks CAD files for the custom robot arm. It in
 - `Whole_Assem.SLDASM`: This file represents the assembly of the entire system, including the arm, controller box, onboard Intel NUC, and the rails designed for connection to the Unitree Go1 robot.
 ![Robot Arm](Arm_Photos/Arm_CAD1.PNG "Whole Assembly")
 
+Note: The gripper design is sourced from an open-source gripper available on [GrabCAD](https://grabcad.com/library/gripper-arm-4).
+
 ## BiQu Go1 URDF
+To visualize the URDF in Rviz, follow these steps:
+
+1. Clone the repository into your `catkin_ws/src` directory and navigate to your catkin_ws directory and build the workspace using catkin_make:
+
+2. Open a terminal and enter the following command to visualize the URDF in Rviz:
+
+    ```
+    roslaunch urdf_tutorial display.launch model:='$(find Arm_URDF)/biqu_go1.urdf'
+    ```
+
+    This command launches Rviz with the specified URDF model. You may need to adjust the fixed_frame parameter in Rviz from base to base_link for correct frame transformation.
+
+    ![Robot URDF](Arm_Photos/BiQu_Go1_Rviz.png "Robot URDF")

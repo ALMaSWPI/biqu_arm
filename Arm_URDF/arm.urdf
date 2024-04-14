@@ -1,0 +1,465 @@
+<robot name="onshape">
+<link name="base">
+<visual>
+<origin xyz="-0.043000000000000093703 -0.056249572745411466346 0.053674572697836049617" rpy="1.570796326794896558 6.9388939039074071039e-18 -2.0296264668928948688e-16" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/batterycover.stl"/>
+</geometry>
+<material name="batterycover_material">
+<color rgba="0.79607843137254896693 0.82352941176470584317 0.9372549019607843146 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.043000000000000093703 -0.056249572745411466346 0.053674572697836049617" rpy="1.570796326794896558 6.9388939039074071039e-18 -2.0296264668928948688e-16" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/batterycover.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0.027999999999999969358 0.045620425736449282672 -0.0078254274213730105197" rpy="-1.570796326794896558 -0 -1.570796326794896558" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/bar.stl"/>
+</geometry>
+<material name="bar_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.027999999999999969358 0.045620425736449282672 -0.0078254274213730105197" rpy="-1.570796326794896558 -0 -1.570796326794896558" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/bar.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.045499999999999984901 0.18587042725458807757 0.00017457269783627965554" rpy="-1.570796326794896558 -0 -1.570796326794896558" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/nuc_enclosure_right_v8.step.stl"/>
+</geometry>
+<material name="nuc_enclosure_right_v8.step_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.045499999999999984901 0.18587042725458807757 0.00017457269783627965554" rpy="-1.570796326794896558 -0 -1.570796326794896558" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/nuc_enclosure_right_v8.step.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.029000000000002121303 0.050370427254587735177 0.059174572697836602675" rpy="1.570796326794896558 9.0105057071027178548e-17 1.570796326794896558" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/cap.stl"/>
+</geometry>
+<material name="cap_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.029000000000002121303 0.050370427254587735177 0.059174572697836602675" rpy="1.570796326794896558 9.0105057071027178548e-17 1.570796326794896558" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/cap.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-9.0000000000006741274e-05 -0.001039572745412595256 0.037174572697836277824" rpy="-1.570796326794896558 -0 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/motor.stl"/>
+</geometry>
+<material name="motor_material">
+<color rgba="1 1 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-9.0000000000006741274e-05 -0.001039572745412595256 0.037174572697836277824" rpy="-1.570796326794896558 -0 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/motor.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0.045500000000000005718 0.037870427254587731014 0.00017457269783625623677" rpy="-1.570796326794896558 -2.2204460492410355836e-16 1.57079632679489678" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/nuc_enclosure_left_v27.step.stl"/>
+</geometry>
+<material name="nuc_enclosure_left_v27.step_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.045500000000000005718 0.037870427254587731014 0.00017457269783625623677" rpy="-1.570796326794896558 -2.2204460492410355836e-16 1.57079632679489678" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/nuc_enclosure_left_v27.step.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0 -0.001129572745412591589 0.00017457269783627965554" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/base.stl"/>
+</geometry>
+<material name="base_material">
+<color rgba="1 1 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.001129572745412591589 0.00017457269783627965554" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/base.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.0030000000000000581757 0.11587042725458805703 0.0041745726978362797388" rpy="0 -0 -1.2325951644077898923e-32" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/nuc.stl"/>
+</geometry>
+<material name="nuc_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.0030000000000000581757 0.11587042725458805703 0.0041745726978362797388" rpy="0 -0 -1.2325951644077898923e-32" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/nuc.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.063000000000000000444 0.045620425736449157772 -0.0078254274213730122545" rpy="-1.570796326794896558 -0 -1.570796326794896558" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/bar.stl"/>
+</geometry>
+<material name="bar_material">
+<color rgba="0.62745098039215685404 0.62745098039215685404 0.62745098039215685404 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.063000000000000000444 0.045620425736449157772 -0.0078254274213730122545" rpy="-1.570796326794896558 -0 -1.570796326794896558" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/bar.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.040500000000000015155 -0.056249572745412590447 0.053674572697836375745" rpy="1.570796326794896558 1.5919291637703030189e-31 1.3010426069826006369e-16" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/batterybox.stl"/>
+</geometry>
+<material name="batterybox_material">
+<color rgba="0.79607843137254896693 0.82352941176470584317 0.9372549019607843146 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.040500000000000015155 -0.056249572745412590447 0.053674572697836375745" rpy="1.570796326794896558 1.5919291637703030189e-31 1.3010426069826006369e-16" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/batterybox.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0 -0.001129572745412591589 0.078174572697836286483" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/base2.stl"/>
+</geometry>
+<material name="base2_material">
+<color rgba="1 1 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.001129572745412591589 0.078174572697836286483" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/base2.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="-0.0010344577161941546743 0.04181890992252584871 0.029898059563253923804" rpy="0 0 0"/>
+<mass value="2.728488216480799089" />
+<inertia ixx="0.02706774372853133076" ixy="0.00054067252642245040677"  ixz="2.8567880911383165094e-05" iyy="0.0038152470185468614385" iyz="0.00054819753264507132921" izz="0.028383963686429720258" />
+</inertial>
+</link>
+
+<link name="link1">
+<visual>
+<origin xyz="-0.0054332708436385518391 -1.7997756063259373605e-17 -0.033000000000000001554" rpy="3.141592653589793116 -9.8090892502737194965e-45 1.267861666945625271e-17" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/link1.stl"/>
+</geometry>
+<material name="link1_material">
+<color rgba="1 1 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.0054332708436385518391 -1.7997756063259373605e-17 -0.033000000000000001554" rpy="3.141592653589793116 -9.8090892502737194965e-45 1.267861666945625271e-17" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/link1.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.0054332708436385518391 -1.7997756063259373605e-17 -0.033000000000000001554" rpy="-3.141592653589793116 -1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/base2.stl"/>
+</geometry>
+<material name="base2_material">
+<color rgba="1 1 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.0054332708436385518391 -1.7997756063259373605e-17 -0.033000000000000001554" rpy="-3.141592653589793116 -1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/base2.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.046433270843638324576 8.9999999999992863486e-05 -0.033089999999999925029" rpy="1.570796326794896558 -1.5707963267948961139 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/motor.stl"/>
+</geometry>
+<material name="motor_material">
+<color rgba="1 1 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.046433270843638324576 8.9999999999992863486e-05 -0.033089999999999925029" rpy="1.570796326794896558 -1.5707963267948961139 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/motor.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="-0.041242122456885535464 9.5447388145449493248e-05 -0.030973541753897184531" rpy="0 0 0"/>
+<mass value="0.58371184536850717617" />
+<inertia ixx="0.00019245383353722509095" ixy="2.1656015044083137864e-07"  ixz="-1.212208052300071926e-05" iyy="0.00041195380001483834298" iyz="1.1823486784021973871e-07" izz="0.00037713570669470287879" />
+</inertial>
+</link>
+
+<link name="link2">
+<visual>
+<origin xyz="-0.20499999999999776734 -6.6613381477509392425e-16 0.059999999999999720224" rpy="-1.7029276923339265031e-15 -1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/link2.2.stl"/>
+</geometry>
+<material name="link2.2_material">
+<color rgba="1 1 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.20499999999999776734 -6.6613381477509392425e-16 0.059999999999999720224" rpy="-1.7029276923339265031e-15 -1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/link2.2.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.20499999999999782285 -5.9674487573602164048e-16 0.059999999999999706346" rpy="1.778867441181035444e-17 4.8251088930317348765e-16 3.1415926535897926719" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/base2.stl"/>
+</geometry>
+<material name="base2_material">
+<color rgba="1 1 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.20499999999999782285 -5.9674487573602164048e-16 0.059999999999999706346" rpy="1.778867441181035444e-17 4.8251088930317348765e-16 3.1415926535897926719" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/base2.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0 0 0.020000000000000000416" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/link2.stl"/>
+</geometry>
+<material name="link2_material">
+<color rgba="1 1 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0.020000000000000000416" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/link2.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.20508999999999941166 8.9999999999298974096e-05 0.019000000000000412392" rpy="-1.570796326794896558 9.5727299502079627247e-16 -1.08214256620902617e-15" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/motor.stl"/>
+</geometry>
+<material name="motor_material">
+<color rgba="1 1 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.20508999999999941166 8.9999999999298974096e-05 0.019000000000000412392" rpy="-1.570796326794896558 9.5727299502079627247e-16 -1.08214256620902617e-15" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/motor.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="-0.18369256495623187408 5.1287889447513036203e-05 0.01467330229163361921" rpy="0 0 0"/>
+<mass value="0.69558895030050260644" />
+<inertia ixx="0.00057902308488614251045" ixy="8.3152475479661448625e-07"  ixz="0.00045703634575853965783" iyy="0.0024076671898047912954" iyz="-5.0553322379110441339e-07" izz="0.0020098405261636405859" />
+</inertial>
+</link>
+
+<link name="link3">
+<visual>
+<origin xyz="-0.14755927857215847543 -0.0030709617015239887294 0.034999999999999531486" rpy="-1.570796326794901443 7.8815869593862586232e-16 1.7713591602216023357" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/gripper_3.stl"/>
+</geometry>
+<material name="gripper_3_material">
+<color rgba="0 0.50196078431372548323 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.14755927857215847543 -0.0030709617015239887294 0.034999999999999531486" rpy="-1.570796326794901443 7.8815869593862586232e-16 1.7713591602216023357" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/gripper_3.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.095067017584915369799 0.0037828239434247734607 0.008215004668317753278" rpy="3.5664695208912036138e-16 -1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/part_2.stl"/>
+</geometry>
+<material name="part_2_material">
+<color rgba="0.79607843137254896693 0.82352941176470584317 0.9372549019607843146 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.095067017584915369799 0.0037828239434247734607 0.008215004668317753278" rpy="3.5664695208912036138e-16 -1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/part_2.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.11574999999999993627 0.00092468640208276386971 0.019999999999999566735" rpy="4.0236093262708227392e-17 -4.9438733272218117758e-17 2.0144807537012205006e-16" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/servo.stl"/>
+</geometry>
+<material name="servo_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.11574999999999993627 0.00092468640208276386971 0.019999999999999566735" rpy="4.0236093262708227392e-17 -4.9438733272218117758e-17 2.0144807537012205006e-16" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/servo.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.13174999999999989497 -0.0084999999999998965272 0.037499999999999616973" rpy="-0.20056283342669889436 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/gripper_1.stl"/>
+</geometry>
+<material name="gripper_1_material">
+<color rgba="0.89411764705882357251 0.91372549019607840481 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.13174999999999989497 -0.0084999999999998965272 0.037499999999999616973" rpy="-0.20056283342669889436 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/gripper_1.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-2.7755575615628913511e-17 -5.5511151231257827021e-17 0.020000000000000010825" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/link3.stl"/>
+</geometry>
+<material name="link3_material">
+<color rgba="1 1 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-2.7755575615628913511e-17 -5.5511151231257827021e-17 0.020000000000000010825" rpy="1.570796326794896558 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/link3.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.14669465341390486302 0.0010123381382037832665 0.035000000000000003331" rpy="1.5707963267948950037 -7.6463365347586373083e-16 -1.6376814851098608905" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/gripper_3.stl"/>
+</geometry>
+<material name="gripper_3_material">
+<color rgba="0 0.50196078431372548323 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.14669465341390486302 0.0010123381382037832665 0.035000000000000003331" rpy="1.5707963267948950037 -7.6463365347586373083e-16 -1.6376814851098608905" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/gripper_3.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.095067017584915369799 0.0037828239434247734607 0.008215004668317753278" rpy="3.5664695208912036138e-16 -1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/part_1.stl"/>
+</geometry>
+<material name="part_1_material">
+<color rgba="0.79607843137254896693 0.82352941176470584317 0.9372549019607843146 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.095067017584915369799 0.0037828239434247734607 0.008215004668317753278" rpy="3.5664695208912036138e-16 -1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/part_1.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.13174999999999989497 0.0084999999999998410161 0.037500000000000054123" rpy="0.066885158314967024795 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/gripper_2.stl"/>
+</geometry>
+<material name="gripper_2_material">
+<color rgba="0.89411764705882357251 0.91372549019607840481 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.13174999999999989497 0.0084999999999998410161 0.037500000000000054123" rpy="0.066885158314967024795 1.570796326794896558 0" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/gripper_2.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.1157499999999999224 0 0.037499999999999561462" rpy="-1.57079632679489678 -2.1571113117678167993e-16 1.5707963267948956698" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/gripper_4.stl"/>
+</geometry>
+<material name="gripper_4_material">
+<color rgba="0.89411764705882357251 0.91372549019607840481 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.1157499999999999224 0 0.037499999999999561462" rpy="-1.57079632679489678 -2.1571113117678167993e-16 1.5707963267948956698" />
+<geometry>
+<mesh filename="package://Arm_URDF/meshes/arm/gripper_4.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="-0.089483000114599725583 -0.00038577658413896105238 0.0018940659154347233659" rpy="0 0 0"/>
+<mass value="0.13213715938135658923" />
+<inertia ixx="0.00010975026839934459038" ixy="-7.3563565811300834379e-06"  ixz="0.00013977189346253430439" iyy="0.00056140953791821920915" iyz="1.7061822566271839312e-06" izz="0.00049411105582780785739" />
+</inertial>
+</link>
+
+<joint name="j3" type="fixed">
+<origin xyz="-0.20509002189797051474 -1.4672502470558512755e-05 0.090080000000002602434" rpy="-3.1415926535897922278 -9.3305013695572322979e-15 1.7546092432393536331" />
+<parent link="link2" />
+<child link="link3" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="j2" type="fixed">
+<origin xyz="0.024646729156363667707 0.00019467250247003466471 -0.033090021897969917886" rpy="-1.570796326794896558 -0.95603848300716276487 1.5707963267949527353" />
+<parent link="link1" />
+<child link="link2" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="j1" type="fixed">
+<origin xyz="-9.0021897970908593134e-05 -0.0011442452478826114701 0.10063457269783629422" rpy="3.141592653589793116 8.692399673602098605e-30 0.09066580704768881227" />
+<parent link="base" />
+<child link="link1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+</robot>

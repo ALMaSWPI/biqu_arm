@@ -11,6 +11,7 @@
 ros::NodeHandle node_handle;
 
 // ros msg
+std_msgs::Bool gripper_msg;
 std_msgs::Bool complete_msg;
 geometry_msgs::Twist command_msg;
 
@@ -41,14 +42,12 @@ const int stepPin_3 = 50;
 //     }
 // }
 
-// // gripper variables
-// const int feedbackPin = A0;
-// const int gripperPin = 22;
-// const int gripperPin2 = 23;
+// gripper variables
+const int feedbackPin = A0;
+const int gripperPin = 41;
 
 // object initiation
-// Gripper gripper(gripperPin, feedbackPin);
-// Gripper gripper2(gripperPin2, feedbackPin);
+Gripper gripper(gripperPin, feedbackPin);
 Joint joint1(motorInterfaceType, stepPin_1, dirPin_1);
 Joint joint2(motorInterfaceType, stepPin_2, dirPin_2);
 Joint joint3(motorInterfaceType, stepPin_3, dirPin_3);
@@ -64,8 +63,8 @@ int joint1Vel = 0;
 int joint2Vel = 0;
 int joint3Vel = 0;
 
-// ros subscriber call back
-void subscriberCallback(const geometry_msgs::Twist& command_msg) {
+// ros arm subscriber call back
+void armSubscriberCallback(const geometry_msgs::Twist& command_msg) {
 
     // send incompletion ros msg
     complete_msg.data = false;
@@ -91,12 +90,28 @@ void subscriberCallback(const geometry_msgs::Twist& command_msg) {
         joint3.setSpeed(joint3Vel);
 
         //open the gripper
-        // gripper.moveTo(90); 
+        // gripper.moveTo(50); 
+    }
+}
+
+// ros arm subscriber call back
+void gripperSubscriberCallback(const std_msgs::Bool& gripper_msg) {
+
+    if (gripper_msg.data == true){
+        gripper.moveTo(50); // open the gripper
+        // pinMode(LED_BUILTIN, OUTPUT);
+        // digitalWrite(LED_BUILTIN, HIGH);
+    }
+    else{
+        gripper.moveTo(10); // close the gripper
+        // pinMode(LED_BUILTIN, OUTPUT);
+        // digitalWrite(LED_BUILTIN, LOW);
     }
 }
 
 // ros subscriber
-ros::Subscriber<geometry_msgs::Twist> command_subscriber("arm_command", &subscriberCallback);
+ros::Subscriber<geometry_msgs::Twist> command_subscriber("arm_command", &armSubscriberCallback);
+ros::Subscriber<std_msgs::Bool> gripper_subscriber("gripper_command", &gripperSubscriberCallback);
 
 void setup() {
 
@@ -108,10 +123,14 @@ void setup() {
     joint2.setup();
     joint3.setup();
 
+    // turn on gripper
+    gripper.setup();
+
     // enable ros
     node_handle.initNode();
     node_handle.advertise(complete_publisher);
     node_handle.subscribe(command_subscriber);
+    node_handle.subscribe(gripper_subscriber);
 }
 
 void loop() {
@@ -127,7 +146,7 @@ void loop() {
     if (joint1.noDistToGo() && joint2.noDistToGo() && joint3.noDistToGo() && !complete_msg.data){
         
         // close the gripper if motion completes
-        // gripper.moveTo(180);
+        // gripper.moveTo(10);
 
         // send completion ros msg
         complete_msg.data = true;

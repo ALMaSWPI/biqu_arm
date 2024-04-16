@@ -1230,31 +1230,31 @@
     </inertial>
   </link>
 
-  <joint name="j3" type="fixed">
+  <joint name="j3" type="revolute">
     <origin xyz="-0.20509002189797051474 -1.4672502470558512755e-05 0.090080000000002602434" rpy="-3.1415926535897922278 -9.3305013695572322979e-15 1.7546092432393536331" />
     <parent link="link2" />
     <child link="link3" />
     <axis xyz="0 0 1"/>
-    <limit effort="1" velocity="20" />
-    <joint_properties friction="0.0"/>
+    <dynamics damping="0.01" friction="0.2"/>
+    <limit effort="9.72" lower="-0.863" upper="0.863" velocity="1"/>
   </joint>
 
-  <joint name="j2" type="fixed">
+  <joint name="j2" type="revolute">
     <origin xyz="0.024646729156363667707 0.00019467250247003466471 -0.033090021897969917886" rpy="-1.570796326794896558 -0.95603848300716276487 1.5707963267949527353" />
     <parent link="link1" />
     <child link="link2" />
     <axis xyz="0 0 1"/>
-    <limit effort="1" velocity="20" />
-    <joint_properties friction="0.0"/>
+    <dynamics damping="0.01" friction="0.2"/>
+    <limit effort="9.72" lower="-0.863" upper="0.863" velocity="1"/>
   </joint>
 
-  <joint name="j1" type="fixed">
+  <joint name="j1" type="revolute">
     <origin xyz="-9.0021897970908593134e-05 -0.0011442452478826114701 0.10063457269783629422" rpy="3.141592653589793116 8.692399673602098605e-30 0.09066580704768881227" />
     <parent link="arm_base" />
     <child link="link1" />
     <axis xyz="0 0 1"/>
-    <limit effort="1" velocity="20" />
-    <joint_properties friction="0.0"/>
+    <dynamics damping="0.01" friction="0.2"/>
+    <limit effort="9.72" lower="-0.863" upper="0.863" velocity="1"/>
   </joint>
 
   <joint name="base_to_arm" type="fixed">
